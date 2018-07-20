@@ -185,6 +185,8 @@ if $CUDA ; then
                  -DENABLE_PRECOMPILED_HEADERS=OFF \
                  -DWITH_OPENMP=ON \
                  -DWITH_NVCUVID=ON \
+                 -DWITH_QT=ON \
+                 -DWITH_GTK=OFF \
                  -DOPENCV_EXTRA_MODULES_PATH=~/Downloads/opencv_contrib-${OPENCV_VERSION}/modules .. >> cmake_log.txt 2>&1
 else
 
@@ -197,6 +199,8 @@ else
                  -DINSTALL_PYTHON_EXAMPLES=ON \
                  -DENABLE_PRECOMPILED_HEADERS=OFF \
                  -DWITH_OPENMP=ON \
+                 -DWITH_QT=ON \
+                 -DWITH_GTK=OFF \
                  -DWITH_NVCUVID=OFF \
                  -DOPENCV_EXTRA_MODULES_PATH=~/Downloads/opencv_contrib-${OPENCV_VERSION}/modules .. >> cmake_log.txt 2>&1
 
